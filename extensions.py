@@ -16,11 +16,11 @@ if "." in fname:
     ext = fname.split(".")
 
     if ext[-1] in img_exts:
-        print("image/" + ext[1])
+        print("image/" + ext[-1])
     elif ext[-1] in jpg_exts:
         print("image/jpeg")
     elif ext[-1] in app_exts:
-        print("application/" + ext[1])
+        print("application/" + ext[-1])
     elif ext[-1] in app_txts:
         print("text/plain")
     else:
