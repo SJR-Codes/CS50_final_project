@@ -14,14 +14,15 @@ app_txts = ["txt"]
 
 if "." in fname:
     ext = fname.split(".")
+    ext = ext[-1]
 
-    if ext[-1] in img_exts:
-        print("image/" + ext[-1])
-    elif ext[-1] in jpg_exts:
+    if ext in img_exts:
+        print("image/" + ext)
+    elif ext in jpg_exts:
         print("image/jpeg")
-    elif ext[-1] in app_exts:
-        print("application/" + ext[-1])
-    elif ext[-1] in app_txts:
+    elif ext in app_exts:
+        print("application/" + ext)
+    elif ext in app_txts:
         print("text/plain")
     else:
         print("application/octet-stream")
