@@ -6,7 +6,8 @@
 
 
 fname = input("Enter file name: ").strip().lower()
-img_exts = ["gif", "jpg", "jpeg", "png"]
+img_exts = ["gif", "png"]
+jpg_exts = ["jpg", "jpeg"]
 app_exts = ["pdf", "zip"]
 app_txts = ["txt"]
 
@@ -16,6 +17,8 @@ if "." in fname:
 
     if ext[-1] in img_exts:
         print("image/" + ext[1])
+    elif ext[-1] in jpg_exts:
+        print("image/jpeg")
     elif ext[-1] in app_exts:
         print("application/" + ext[1])
     elif ext[-1] in app_txts:
