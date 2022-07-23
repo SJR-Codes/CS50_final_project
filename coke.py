@@ -13,6 +13,6 @@ while amount < coke_price:
     if change in accept_change:
         amount += change
     if coke_price - amount > 0:
-        print("Amount due:", str(coke_price - amount))
+        print("Amount due:", str(coke_price - amount), " ")
 
-print("Change owed:", str(amount - coke_price))
+print("Change owed:", str(amount - coke_price), " ")
