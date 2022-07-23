@@ -9,7 +9,8 @@ accept_change = [25, 10, 5]
 amount = 0
 
 while amount < coke_price:
-    change = int(input("Enter money(25c, 10c or 5c): "))
+    #change = int(input("Enter money(25c, 10c or 5c): "))
+    change = int(input())
     if change in accept_change:
         amount += change
     if coke_price - amount > 0:
