@@ -1,5 +1,5 @@
 """
-* CS50P Problem Set 1
+* CS50P Problem Set 2
 * Camel Case
 * by Samu Reinikainen 23.07.2022
 """
@@ -15,6 +15,7 @@ def snakify(vname):
 
     ret = ""
     for x in vname:
+        #TODO: check that we are not in 1. char and just lower that without underscore
         if x.isupper():
             ret += "_" + x.lower()
         else:
