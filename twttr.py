@@ -1,6 +1,6 @@
 """
 * CS50P Problem Set 2
-* Coke Machine
+* Just setting up my twttr
 * by Samu Reinikainen 23.07.2022
 """
 
