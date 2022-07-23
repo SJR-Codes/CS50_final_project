@@ -49,7 +49,7 @@ def v_nums(s):
     for x in s:
         if x.isdigit():
             has_d = True
-        if x.isalpha and has_d:
+        if x.isalpha() and has_d:
             return False
 
     return True
