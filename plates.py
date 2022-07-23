@@ -44,10 +44,15 @@ def v_nums(s):
     #check that there's numbers only at the end
     if(s.isalpha()):
         return True
-    elif(s[-1].isalpha()):
-        return False
-    else:
-        return True
+
+    has_d = False
+    for x in s:
+        if x.isdigit():
+            has_d = True
+        if x.isalpha and has_d:
+            return False
+
+    return True
 
 def v_nozero(s):
     #check that numbers dont start with zero
