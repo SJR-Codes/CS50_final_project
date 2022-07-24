@@ -34,7 +34,8 @@ def sort_list(slist):
     return final_list
 
 def print_list(slist):
+    print()
     for x, y in slist.items():
-        print(f"{y} {x}")
+        print(f"{y} {x}", end="\n")
 
 main()
