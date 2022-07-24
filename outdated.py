@@ -41,7 +41,7 @@ def conv_num_date(udate):
     if day > 31 or day < 1 or mon > 12 or mon < 1:
         return False
 
-    return str(day).zfill(2) + "-" + str(mon).zfill(2) + "-" + str(year)
+    return str(year).zfill(2) + "-" + str(mon).zfill(2) + "-" + str(day)
 
 
 def conv_mon_date(udate):
