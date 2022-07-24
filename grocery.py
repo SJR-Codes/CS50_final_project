@@ -6,7 +6,7 @@
 
 def main():
     #slist = sort_list(get_input("Remember to buy? "))
-    slist = sort_list(get_input())
+    slist = sort_list(get_input(""))
 
     #slist.sort()
 
