@@ -44,7 +44,7 @@ def fract_to_gauge(fract):
     elif res >= 99:
         res = "F"
     else
-        res += "%"
+        res = "%" + str(res)
 
     return res
 
