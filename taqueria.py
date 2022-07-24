@@ -14,6 +14,7 @@ def get_input(prompt):
     while True:
         try:
             price += get_price(input(prompt))
+            print(f"Total: ${price:.2f}", end=" ")
         except EOFError:
             return price
 
