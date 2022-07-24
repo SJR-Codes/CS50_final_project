@@ -1,5 +1,5 @@
 """
-* CS50P Problem Set 2
+* CS50P Problem Set 3
 * Fuel Gauge
 * by Samu Reinikainen 24.07.2022
 """
