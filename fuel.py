@@ -28,7 +28,7 @@ def check_input(fract):
         #print("Value Error: Not valid fraction!")
         return False
 
-    if y <= 0 or x < 0:
+    if y <= 0 or x < 0 or x > y:
         #print("Zero or Negative Number Error: Not valid fraction!")
         return False
 
@@ -43,6 +43,8 @@ def fract_to_gauge(fract):
         res = "E"
     elif res >= 99:
         res = "F"
+    else
+        res += "%"
 
     return res
 
