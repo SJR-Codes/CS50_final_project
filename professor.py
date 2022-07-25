@@ -8,7 +8,8 @@ import sys
 import random as r
 
 def main():
-    level = get_level("Level: ")
+    print("Level: ")
+    level = get_level("")
     guestions = generate_guestions(level)
     score = ask_guestions(guestions)
 
@@ -23,9 +24,9 @@ def get_level(prompt):
             else:
                 raise ValueError
         except ValueError:
-            #pass
+            pass
             #sys.exit("Level can only be 1, 2 or 3!")
-            sys.exit()
+            #sys.exit()
 
 
 def generate_integer(level):
