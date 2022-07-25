@@ -34,4 +34,4 @@ except IndexError:
 amount = coins_to_buy * rate
 amount = '{:,.4f}'.format(amount)
 
-print(amount)
+print("$" + amount)
