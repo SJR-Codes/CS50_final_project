@@ -8,16 +8,16 @@ import sys
 import random
 
 def main():
-    level = get_level("Level: ")
+    level = get_level()
 
     rint = generate_integer(level)
 
     print(rint)
 
-def get_level(prompt):
+def get_level():
     while True:
         try:
-            level = int(input(prompt))
+            level = int(input("Level: "))
         except ValueError:
             continue
         else:
