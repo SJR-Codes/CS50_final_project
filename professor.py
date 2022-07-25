@@ -9,7 +9,7 @@ import random as r
 
 def main():
     #print("Level: ", end="")
-    level = get_level("Level: ")
+    level = get_level("Level:")
     guestions = generate_guestions(level)
     score = ask_guestions(guestions)
 
