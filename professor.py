@@ -20,9 +20,12 @@ def get_level(prompt):
             level = int(input(prompt))
             if 3 >= level > 0:
                 return level
+            else:
+                raise ValueError
         except ValueError:
             #pass
-            sys.exit("Level can only be 1, 2 or 3!")
+            #sys.exit("Level can only be 1, 2 or 3!")
+            sys.exit()
 
 
 def generate_integer(level):
@@ -44,9 +47,10 @@ def generate_guestion(level):
         x = generate_integer(level)
         y = generate_integer(level)
     except ValueError:
-        sys.exit("Level can only be 1, 2 or 3!")
+        #sys.exit("Level can only be 1, 2 or 3!")
+        sys.exit()
 
-    return str(x) + "+" + str(y)
+    return str(x) + " + " + str(y)
 
 def ask_guestions(guestions):
     score = 0
