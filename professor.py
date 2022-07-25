@@ -15,6 +15,8 @@ def main():
 
     print(score)
 
+    sys.exit()
+
 def get_level(prompt):
     while True:
         try:
