@@ -17,6 +17,9 @@ def get_level(prompt):
             level = int(level)
         except ValueError:
             continue
+        else:
+            if 3 >= level > 0:
+                return level
 
 
 if __name__ == "__main__":
