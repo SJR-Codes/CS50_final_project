@@ -8,7 +8,7 @@ import sys
 import random as r
 
 def main():
-    print("Level: ")
+    print("Level: ", end="")
     level = get_level("")
     guestions = generate_guestions(level)
     score = ask_guestions(guestions)
