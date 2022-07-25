@@ -21,12 +21,11 @@ def get_level(prompt):
     while True:
         try:
             level = int(input(prompt))
-            if 3 >= level > 0:
-                break
-            else:
-                sys.exit()
         except ValueError:
             continue
+        else:
+            if 3 >= level > 0:
+                break
 
     return level
 
