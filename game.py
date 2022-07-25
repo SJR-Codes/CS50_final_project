@@ -4,6 +4,7 @@
 * by Samu Reinikainen 25.07.2022
 """
 
+import sys
 import random as r
 
 def main():
@@ -18,12 +19,10 @@ def get_input(prompt):
         try:
             level = int(input(prompt))
             if level > 0:
-                break
+                return level
         except ValueError:
             pass
-
-    return level
-
+        
 def get_guess(rnum):
     while True:
         try:
@@ -34,8 +33,7 @@ def get_guess(rnum):
                 elif guess < rnum:
                     print("Too small!")
                 else:
-                    print("Just right!")
-                    break
+                    sys.exit("Just right!")
 
         except ValueError:
             pass
