@@ -22,6 +22,6 @@ def get_input(prompt):
 def say_adieu(names):
     adieu = p.join(names)
 
-    print("Adieu, Adieu, to " + adieu)
+    print("Adieu, adieu, to " + adieu)
 
 main()
