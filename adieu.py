@@ -8,7 +8,7 @@ import inflect
 p = inflect.engine()
 
 def main():
-    print("Name: ")
+    #print("Name: ")
     names = say_adieu(get_input(""))
 
 def get_input(prompt):
