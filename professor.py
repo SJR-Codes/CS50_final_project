@@ -21,7 +21,8 @@ def get_level(prompt):
             if 3 >= level > 0:
                 return level
         except ValueError:
-            pass
+            #pass
+            sys.exit("Level can only be 1, 2 or 3!")
 
 
 def generate_integer(level):
