@@ -20,23 +20,21 @@ def main():
 def get_level(prompt):
     while True:
         try:
-            level = int(input(prompt))
-            if 3 >= level > 0:
-                return level
-            else:
-                continue
+            level = generate_integer(int(input(prompt)))
+            break
         except ValueError:
-            pass
-            #sys.exit("Level can only be 1, 2 or 3!")
-            #sys.exit()
+            continue
 
+    return level
 
 def generate_integer(level):
-    #this is just moronic but I'll just do as specs tell me
     if 3 >= level > 0:
-        return r.randint(1, (10**level)-1)
+        return level
     else:
         raise ValueError
+
+def de_generate_integer(level):
+        return r.randint(1, (10**level)-1)
 
 def generate_guestions(level):
     guestions = []
@@ -46,12 +44,8 @@ def generate_guestions(level):
     return guestions
 
 def generate_guestion(level):
-    try:
-        x = generate_integer(level)
-        y = generate_integer(level)
-    except ValueError:
-        #sys.exit("Level can only be 1, 2 or 3!")
-        sys.exit()
+    x = de_generate_integer(level)
+    y = de_generate_integer(level)
 
     return str(x) + " + " + str(y)
 
