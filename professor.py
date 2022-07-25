@@ -23,6 +23,8 @@ def get_level(prompt):
             level = int(input(prompt))
             if 3 >= level > 0:
                 break
+            else:
+                sys.exit()
         except ValueError:
             continue
 
