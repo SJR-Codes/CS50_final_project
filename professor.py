@@ -9,7 +9,7 @@ import random as r
 
 def main():
     #print("Level: ", end="")
-    level = get_level("")
+    level = get_level("Level:")
     guestions = generate_guestions(level)
     score = ask_guestions(guestions)
 
@@ -24,7 +24,7 @@ def get_level(prompt):
             else:
                 raise ValueError
         except ValueError:
-            pass
+            continue
             #sys.exit("Level can only be 1, 2 or 3!")
             #sys.exit()
 
