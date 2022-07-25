@@ -5,7 +5,7 @@
 """
 
 import sys
-import random as r
+import random
 
 def main():
     #print("Level: ", end="")
@@ -20,8 +20,9 @@ def main():
 def get_level(prompt):
     while True:
         try:
-            level = generate_integer(int(input(prompt)))
-            break
+            level = int(input(prompt))
+            if 3 >= level > 0:
+                break
         except ValueError:
             continue
 
@@ -29,12 +30,9 @@ def get_level(prompt):
 
 def generate_integer(level):
     if 3 >= level > 0:
-        return level
+        return random.randint(1, (10**level)-1)
     else:
         raise ValueError
-
-def de_generate_integer(level):
-        return r.randint(1, (10**level)-1)
 
 def generate_guestions(level):
     guestions = []
@@ -44,8 +42,8 @@ def generate_guestions(level):
     return guestions
 
 def generate_guestion(level):
-    x = de_generate_integer(level)
-    y = de_generate_integer(level)
+    x = generate_integer(level)
+    y = generate_integer(level)
 
     return str(x) + " + " + str(y)
 
