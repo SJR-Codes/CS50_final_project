@@ -22,9 +22,9 @@ def get_level(prompt):
             if 3 >= level > 0:
                 return level
             else:
-                raise ValueError
+                continue
         except ValueError:
-            continue
+            pass
             #sys.exit("Level can only be 1, 2 or 3!")
             #sys.exit()
 
