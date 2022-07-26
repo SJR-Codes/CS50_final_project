@@ -1,5 +1,4 @@
 from twttr import shorten
-import pytest
 
 def test_words():
     assert shorten("Twitter") == "Twttr"
@@ -21,7 +20,7 @@ def test_numeric():
     assert shorten(666) == "666"
 
 def test_empty():
-    assert shorten() == ""
+    assert shorten("") == ""
 
 def test_chars():
     assert shorten(".") == "."
