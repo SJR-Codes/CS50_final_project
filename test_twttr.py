@@ -19,6 +19,9 @@ def test_words_with_y_uppper():
 def test_numeric():
     assert shorten("666") == "666"
 
+def test_punct():
+    assert shorten(".") == "."
+
 """
 def test_numeric():
     assert shorten(666) == "666"
