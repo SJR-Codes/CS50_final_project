@@ -17,7 +17,7 @@ def test_words_with_y_uppper():
     assert shorten("TweEtY") == "TwtY"
 
 def test_numeric():
-    assert shorten(666) == "666"
+    assert shorten("666") == "666"
 
 """
 def test_numeric():
