@@ -27,8 +27,10 @@ def test_not_alphanum_chars():
 
 def test_nums_last():
     assert is_valid("AAA100") == True
+    assert is_valid("AAA111") == True
     assert is_valid("AAA07A") == False
     assert is_valid("AA0A07") == False
+    assert is_valid("AA7A77") == False
 
 def test_no_zero_first():
     assert is_valid("AAA100") == True
