@@ -18,9 +18,11 @@ def test_words_with_y_uppper():
     assert shorten("TweEtY") == "TwtY"
 
 def test_numeric():
-    with pytest.raises(TypeError):
-        assert shorten(666)
+    assert shorten(666) == "666"
 
 def test_empty():
-    with pytest.raises(TypeError):
-        assert shorten()
+    assert shorten() == ""
+
+def test_chars():
+    assert shorten(".") == "."
+    assert shorten("Tit.ty") == "Tt.ty"
