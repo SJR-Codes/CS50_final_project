@@ -27,3 +27,6 @@ def test_0_low():
 def test_100_numeric():
     assert value(50) == 100
     assert value(666) == 100
+
+def test_100_empty():
+    assert value("") == 100
