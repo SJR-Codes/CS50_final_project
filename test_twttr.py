@@ -21,15 +21,3 @@ def test_numeric():
 
 def test_punct():
     assert shorten(".") == "."
-
-"""
-def test_numeric():
-    assert shorten(666) == "666"
-
-def test_empty():
-    assert shorten("") == ""
-
-def test_chars():
-    assert shorten(".") == "."
-    assert shorten("Tit.ty") == "Tt.ty"
-"""
