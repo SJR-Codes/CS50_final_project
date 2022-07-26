@@ -5,6 +5,7 @@ def test_0():
     assert value("Hello") == 0
 
 def test_phrase():
+    assert value("Yo man!") == 100
     assert value("How are you") == 20
     assert value("Hello, sir") == 0
 
