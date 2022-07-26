@@ -17,7 +17,7 @@ def test_str_first_chars():
     assert is_valid("AA123") == True
     assert is_valid("12AA") == False
     assert is_valid("0A") == False
-    assert is_valid(100) == False
+    assert is_valid("100") == False
 
 def test_not_alphanum_chars():
     assert is_valid("AAAAAA") == True
