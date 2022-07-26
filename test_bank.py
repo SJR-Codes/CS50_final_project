@@ -5,8 +5,8 @@ def test_0():
     assert value("Hello") == 0
 
 def test_phrase():
-    assert value("How are you") == 100
-    assert value("Hello, sir") == 100
+    assert value("How are you") == 20
+    assert value("Hello, sir") == 0
 
 """
 def test_100():
