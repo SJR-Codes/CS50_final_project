@@ -29,7 +29,7 @@ after = "first,last,house\n"
 for line in lines[1:]:
     house = line[1]
     tmp = line[0].split(", ")
-    after += f"{tmp[0]},{tmp[1]},{house}\n"
+    after += f"{tmp[1]},{tmp[0]},{house}\n"
 
 #print(after)
 
