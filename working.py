@@ -10,6 +10,8 @@ import sys
 def main():
     print(convert(input("Hours: ")))
     #print(convert("09:00 AM to 05:00 PM"))
+    #print(convert("12:00 AM to 12:00 PM"))
+    #rint(convert("11:00 AM to 11:00 PM"))
 
 
 def convert(s):
@@ -37,9 +39,16 @@ def convert_time(t):
         hour = int(t[:-3])
         min = "00"
     if "PM" in t:
-        hour = int(hour) + 12
+        if hour != "12":
+            hour = int(hour) + 12
     else:
-        hour = int(hour)
+        if hour != "12":
+            hour = int(hour)
+        else:
+            hour = "24"
+
+    if len(str(hour)) == 1:
+        hour = "0" + str(hour)
 
     return f"{hour}:{min}"
 
