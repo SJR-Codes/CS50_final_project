@@ -7,8 +7,8 @@
 from validator_collection import validators, errors
 
 def main():
-    #print(validate(input("What's your email address? ").strip()))
-    print(check("ad@ad.fi"))
+    print(validate(input("What's your email address? ").strip()))
+    #print(check("ad@ad.fi"))
 
 
 def check(e):
