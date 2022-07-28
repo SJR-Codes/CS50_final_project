@@ -8,12 +8,12 @@ import re
 import sys
 
 def main():
-    print(count(input("Text: ")))
-    #print(count("Regular, um, um, Expressions"))
+    #print(count(input("Text: ")))
+    print(count("um um"))
 
 
 def count(s):
-    p = r"(?:\W(um)\W)"
+    p = r"\W(um)\W|^(um)\W|\W(um)$|^(um)$"
     if m := re.findall(p, s, flags=re.IGNORECASE):
         #print(m)
         return len(m)

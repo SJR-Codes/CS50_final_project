@@ -8,6 +8,10 @@ import pytest
 from um import count
 
 def test_simple():
+    assert count("um") == 1
+    #this needs more studying
+    #assert count("um um") == 2
+    assert count("ummu") == 0
     assert count("Regular, um, Expressions") == 1
     assert count("Regular, um, um, Expressions") == 2
     assert count("Regular, UM, Um, Expressions um...") == 3
@@ -16,7 +20,9 @@ def test_simple():
 
 def test_um_in():
     assert count("Regular yummy Expressions") == 0
+    assert count("Um... Regular yummy Expressions") == 1
     assert count("Regular Mum Expressions") == 0
+    assert count("Regular Mum Expressions ...um") == 1
     assert count("Regular, um, mum, Expressions") == 1
 
 def test_garble():
