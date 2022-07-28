@@ -41,11 +41,13 @@ def convert_time(t):
     if "PM" in t:
         if hour != "12":
             hour = int(hour) + 12
+        else:
+            hour = "24"
     else:
         if hour != "12":
             hour = int(hour)
         else:
-            hour = "24"
+            hour = "00"
 
     if len(str(hour)) == 1:
         hour = "0" + str(hour)
