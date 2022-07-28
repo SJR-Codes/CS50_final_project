@@ -11,7 +11,7 @@ def main():
     print(convert(input("Hours: ")))
     #print(convert("09:00 AM to 05:00 PM"))
     #print(convert("12:00 AM to 12:00 PM"))
-    #rint(convert("11:00 AM to 11:00 PM"))
+    #print(convert("11:00 AM to 11:00 PM"))
 
 
 def convert(s):
@@ -41,8 +41,6 @@ def convert_time(t):
     if "PM" in t:
         if hour != "12":
             hour = int(hour) + 12
-        else:
-            hour = "24"
     else:
         if hour != "12":
             hour = int(hour)
