@@ -47,7 +47,7 @@ def sing_minutes(minutes):
     p = inflect.engine()
     words = p.number_to_words(mins, andword="")
 
-    return words.capitalize() + " minutes."
+    return words.capitalize() + " minutes"
 
 if __name__ == "__main__":
     main()

@@ -20,8 +20,8 @@ def test_d2m_invalid():
         assert dates_to_minutes("aaaa-bb-cc", "2022-07-29")
 
 def test_sing():
-    assert sing_minutes(525600) == "Five hundred twenty-five thousand, six hundred minutes."
-    assert sing_minutes(1051200) == "One million fifty-one thousand, two hundred minutes."
+    assert sing_minutes(525600) == "Five hundred twenty-five thousand, six hundred minutes"
+    assert sing_minutes(1051200) == "One million fifty-one thousand, two hundred minutes"
 
 def test_sing_fail():
     with pytest.raises(SystemExit):
