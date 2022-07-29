@@ -22,7 +22,7 @@ def get_bday():
     if re.search(r"^[\d][\d][\d][\d]-[0-1][\d]-[0-3][\d]$", bday):
         return bday
     else:
-        sys.exit(1)
+        sys.exit("Invalid date")
 
 def dates_to_minutes(date_start, date_end):
     try:
