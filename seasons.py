@@ -45,7 +45,7 @@ def sing_minutes(minutes):
         sys.exit()
 
     p = inflect.engine()
-    words = p.number_to_words(mins)
+    words = p.number_to_words(mins, andword="")
 
     return words.capitalize() + " minutes."
 
