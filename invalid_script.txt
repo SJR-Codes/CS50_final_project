@@ -1,0 +1,10 @@
+{   "title": "Welcome :)",
+    "text": "",
+    "image": "sample_1.png",
+    "pause": 2
+}
+{   "title": "Welcome :)",
+    "text": "",
+    "speak": "Um, hello stranger. Nice of you to be interested.",
+    "pause": 1
+}
