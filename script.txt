@@ -1,0 +1,44 @@
+{   "title": "Welcome :)",
+    "text": "",
+    "pause": 15
+},
+{   "title": "Welcome :)",
+    "speak": "Um, hello stranger. Nice of you to be interested.",
+    "pause": 1
+},
+{   "title": "Final Project",
+    "text": "for CS50’s Introduction to Programming with Python",
+    "speak": "This, um, video represents final project for CS50’s Introduction to Programming with Python course.",
+    "pause": 1
+},
+{   "title": "Final Project Representer",
+    "text": "2022\n\nby\n\nSamu Reinikainen\n\nHelsinki, Finland",
+    "speak": "Without further ado let me introduce. Um. The Final Project Representer by Samu Reinikainen.",
+    "pause": 1
+},
+{   "speak": "Projects, um, idea is to have a simple little software to do your final project representation for you.",
+    "pause": 1
+},
+{   "speak": "Well. Not actually do it for you. But interpret speach and slideshow for you with, um, given script.",
+    "pause": 2
+},
+{   "title": "Sample Script",
+    "text": "",
+    "image": "sample_1.png",
+    "speak": "As shown here, the script for representation, um, is quite simple. You can add slides with titles, text, images and narration. ",
+    "pause": 1
+},
+{   "title": "Sample Script",
+    "image": "sample_1.png",
+    "speak": "And narrate your speach. With, um, variable pauses in between.",
+    "pause": 2
+},
+{   "title": "Thank you!",
+    "speak": "Thank you for watching.",
+    "pause": 2
+},
+{   "title": "Goodbye!",
+    "image": "shirtificate.png",
+    "speak": "Over and out",
+    "pause": 10
+}
